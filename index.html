@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Site</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- NavBar -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="admin.html">Admin</a>
+        <button id="adminLoginButton">Admin Login</button>
+    </nav>
+
+    <h1>Blog Posts</h1>
+    
+    <!-- Form להוספת פוסט חדש -->
+    <div id="newPostForm">
+        <h2>Add New Blog Post</h2>
+        <input type="text" id="postTitle" placeholder="Title" required>
+        <textarea id="postContent" placeholder="Content" required></textarea>
+        <input type="file" id="postImage" accept="image/*">
+        <button onclick="addNewBlog()">Add Post</button>
+    </div>
+
+    <!-- הצגת רשימת פוסטים -->
+    <div id="postsContainer"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
